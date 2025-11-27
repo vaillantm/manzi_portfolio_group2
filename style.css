@@ -1,0 +1,183 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #1a0b2e 0%, #2d1b4e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(255, 255, 255, 0.05);
+            gap: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff9500;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 80px 40px;
+            gap: 60px;
+        }
+
+        /* SIMPLE RECTANGLE IMAGE (NO ROUNDED EDGES) */
+        .profile-image {
+            width: 260px;
+            overflow: hidden; /* keeps layout clean */
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .hero-content h1 {
+            font-size: 18px;
+            color: #a0a0a0;
+            margin-bottom: 10px;
+        }
+
+        .hero-content h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #ffffff 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content p {
+            color: #b0b0b0;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #ff9500;
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #e68600;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(255, 149, 0, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        section {
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .about-text {
+            color: #b0b0b0;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background: #ff9500;
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-info {
+            color: #b0b0b0;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: #ff9500;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .button-group {
+                justify-content: center;
+            }
+        }
+  
