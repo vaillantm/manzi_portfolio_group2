@@ -1,1 +1,2 @@
-# manzi_portfolio_group2
+# deloy link
+https://manziport.netlify.app/
