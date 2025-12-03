@@ -1,79 +1,171 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Graphic Designer & Web Developer</title>
+    <title>Manzi Vaillant - Portfolio</title>
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Orange circle favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23ff9500'/%3E%3C/svg%3E">
+ <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- Navigation -->
     <nav>
-        <ul class="nav-links">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="navMenu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="profile-image">
-            <img src="port.png" alt="Profile Image">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-image">
+          <img src="assets/port.png" alt="Manzi Vaillant">
+
         </div>
-
         <div class="hero-content">
-            <h1>HELLO! I'm Manzi Vaillant</h1>
-            <h2>Graphic Designer and<br>Web Developer</h2>
-            <p>I use my coding skills and design skills to make creative projects</p>
+            <h1>Hello! I'm Manzi Vaillant</h1>
+            <h2>Graphic Designer and Web Developer</h2>
+            <p>I blend creativity with technology to craft stunning digital experiences. From eye-catching designs to functional websites, I bring ideas to life with passion and precision.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Contact Me</a>
+               <a href="assets/mv.pdf" class="btn-secondary" download> View CV</a>
 
-            <div class="button-group">
-                <a href="#contact" class="btn btn-primary">Contact Me</a>
-                <a href="#about" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
-        <h3>About</h3>
-        <p class="about-text">
-            I create clear designs and strong websites. I work with passion and care.
-        </p>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>I'm a passionate designer and developer who loves creating beautiful, user-friendly digital experiences. With expertise in both graphic design and web development, I bridge the gap between aesthetics and functionality to deliver exceptional results that exceed expectations.</p>
+        </div>
         <div class="skills">
             <span class="skill-tag">Web Development</span>
             <span class="skill-tag">Graphic Design</span>
             <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Branding</span>
         </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience">
-        
-        <h3>Experience</h3>
-        <div class="experience-item">
-            <h4>Creative Saako – Graphic Designer (June 2025 – Present)</h4>
-        </div>
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-item">
+             <div class="experience-icon">
+    <img src="assets/a1.jpg" alt="Experience Icon" style="width:40px; height:40px;">
+</div>
 
-        <div class="experience-item">
-            <h4>BesilTech – Graphic Designer (June 2025 – Present)</h4>
-        </div>
+                <div class="experience-details">
+                    <h3>BesilTech – GRAPHIC DESIGNER</h3>
+                    <p class="experience-date">June 2025 - Present</p>
+                    <p>Developed custom visual designs for print and digital media, including logos and posters</p>
+                </div>
+            </div>
+            <div class="experience-item">
+             <div class="experience-icon">
+    <img src="assets/a2.jpg" alt="Experience Icon" style="width:30px; height:30px;">
+</div>
 
-        <div class="experience-item">
-            <h4>arcAI.engineer – Social Media Content Creator (July 2025 – Oct 2025)</h4>
-        </div>
+                <div class="experience-details">
+                    <h3>BigCradle – SOFTWARE TESTER</h3>
+                    <p class="experience-date">July 2025 -  Oct 2025</p>
+                    <p>Tested both mobile app and website, documenting issues found, reporting them, and verifying fixes.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+             <div class="experience-icon">
+    <img src="assets/c3.jpg" alt="Experience Icon" style="width:40px; height:40px;">
+</div>
 
-        <div class="experience-item">
-            <h4>BigCradle – Software Tester (July 2025 – Oct 2025)</h4>
-        </div>
+                <div class="experience-details">
+                  <h3>Creative Saako – LEAD CREATIVE DIRECTOR </h3>
+                    <p class="experience-date">June 2025 -  Present</p>
+                    <p>Collaborating with clients and creatives to ensure designs aligned with brand identity and project goals.</p>
+                </div>
+            </div>
+           
     </section>
 
-    <section id="contact">
-        <h3>Contact</h3>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:manzivaillant@gmail.com">manzivaillant@gmail.com</a></p>
-            <p>Phone: <a href="tel:+250785893789">+250 785 893 789</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/vaillant-manzi-84509a191/" target="_blank">LinkedIn Profile</a></p>
-        </div>
-    </section>
+   <!-- Project Section -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
 
+        <!--  1 -->
+        <div class="project-card">
+        <h3>Supermarket Stock Management System</h3>
+                <p>A full-stack inventory platform built with React, Spring Boot, and Node.js to monitor stock levels and product data in real time.</p>
+                <a href="https://github.com/vaillantm/Supermarket-Stock-React-Springboot" class="btn-secondary" target="_blank">
+                    View Project
+                </a>
+        </div>
+
+        <!--  2 -->
+        <div class="project-card">
+            <h3>AI-Based Crime Prediction System</h3>
+                <p>A machine learning system that analyzes historical crime data to predict regional crime likelihood in Rwanda.</p>
+                <a href="https://github.com/vaillantm/AI-Crime-Prediction" class="btn-secondary" target="_blank">
+                    View Project
+                </a>
+        </div>
+
+        <!-- 3 -->
+        <div class="project-card">
+          <h3>Supermarket Stock Management System</h3>
+                <p>A full-stack inventory platform built with React, Spring Boot, and Node.js to monitor stock levels and product data in real time.</p>
+                <a href="https://github.com/vaillantm/Supermarket-Stock-React-Springboot" class="btn-secondary" target="_blank">
+                    View Project
+                </a>
+        </div>
+
+    </div>
+</section>
+
+
+   
+
+
+   <!-- Contact Section -->
+<section id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-intro">Let's work together to bring your ideas to life!</p>
+
+    <div class="contact-list">
+        <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <a href="mailto:manzivaillant@gmail.com">manzivaillant@gmail.com</a>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <a href="https://github.com/vaillantm" target="_blank">github.com/vaillantm</a>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <a href="https://www.linkedin.com/in/vaillant-manzi-84509a191/" target="_blank">linkedin.com/in/vaillant-manzi-84509a191</a>
+        </div>
+    </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+       
+        <p class="copyright">&copy; 2025 Manzi Vaillant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
