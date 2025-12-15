@@ -1,8 +1,8 @@
-# Manzi Portfolio Group 2
+# Manzi Portfolio
 
-This is a personal portfolio website project created by **vaillantm** and deployed on **Netlify**.  
+This is a personal portfolio website project cand deployed on **Netlify**.  
 The site showcases personal work and projects, with a live version available at:  
-👉 [https://manziport.netlify.app/](https://manziport.netlify.app/)
+ [https://manziport.netlify.app/](https://manziport.netlify.app/)
 
 ## Features
 - Personal portfolio showcasing projects and work
