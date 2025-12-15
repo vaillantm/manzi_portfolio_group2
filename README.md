@@ -31,8 +31,6 @@ Contributions are welcome:
 3. Commit changes with clear messages  
 4. Open a pull request  
 
-## License
-Specify a license (e.g., MIT) or add the repository’s chosen license here.
 
 ## Contact
 For questions or issues, open an issue in this repository.
